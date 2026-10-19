@@ -1,0 +1,137 @@
+# ~/.config/alacritty/alacritty.toml
+# Alacritty 0.13+ | JetBrains Mono (Nerd Font) | motyw Tokyo Night
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.95
+blur = true
+dynamic_padding = true
+decorations = "full"          # na macOS możesz dać "Buttonless"
+startup_mode = "Windowed"
+dynamic_title = true
+
+[window.padding]
+x = 14
+y = 12
+
+[window.dimensions]
+columns = 120
+lines = 34
+
+[scrolling]
+history = 20000
+multiplier = 3
+
+[font]
+size = 10.0
+builtin_box_drawing = true
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 2          # trochę większy odstęp między liniami
+
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+shape = "Beam"
+blinking = "On"
+
+[cursor.vi_mode_style]
+shape = "Block"
+blinking = "Off"
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
+
+# ---------- Tokyo Night ----------
+[colors.primary]
+background = "#000000"
+foreground = "#c0caf5"
+
+[colors.cursor]
+text = "#1a1b26"
+cursor = "#c0caf5"
+
+[colors.selection]
+text = "CellForeground"
+background = "#283457"
+
+[colors.search.matches]
+foreground = "#1a1b26"
+background = "#e0af68"
+
+[colors.search.focused_match]
+foreground = "#1a1b26"
+background = "#ff9e64"
+
+[colors.footer_bar]
+foreground = "#c0caf5"
+background = "#292e42"
+
+[colors.normal]
+black   = "#15161e"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#a9b1d6"
+
+[colors.bright]
+black   = "#414868"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c0caf5"
+
+# ---------- Skróty ----------
+[[keyboard.bindings]]
+key = "N"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "Space"
+mods = "Control|Shift"
+action = "ToggleViMode"
